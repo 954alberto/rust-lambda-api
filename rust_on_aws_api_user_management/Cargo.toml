@@ -1,0 +1,21 @@
+[package]
+name = "rust_on_aws_user_management"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"
+
+[dependencies]
+aws-config = "0.15.0"
+aws-sdk-dynamodb = "0.15.0"
+tokio = { version = "1.19.2", features = ["full"] }
+lambda_runtime = "0.5.1"
+serde = "1.0.139"
+serde_json = "1.0.82"
+serde_derive = "1.0.139"
+log = "0.4.1"
+simple_logger = "1.16.0"
+uuid = { version = "1.1.2", features = ["v4"] }
